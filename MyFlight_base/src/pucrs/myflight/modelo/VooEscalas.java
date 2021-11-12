@@ -18,10 +18,11 @@ public class VooEscalas extends Voo {
 		this.duracao = duracao;
 	}
 
-	public void adicionaRota() {
-
+	public void adicionaRota(Rota rota) {
+		rotas.add(rota);
 	}
 
+	@Override
 	public double getDuracao(Geo local1, Geo local2) {
 		// Cálculo da duração do Voo: Distância em Km / Velocidade Média
 		final int velocidadeJato = 805;

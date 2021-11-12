@@ -24,6 +24,7 @@ public class VooDireto extends Voo {
         return rotafinal;
     }
 
+    @Override
     public double getDuracao(Geo local1, Geo local2) {
         // Cálculo da duração do Voo: Distância em Km / Velocidade Média
         final int velocidadeJato = 805;
